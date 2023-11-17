@@ -9,10 +9,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private Vector2 _movement;
     [SerializeField] private Vector2 _rotate;
-    [SerializeField] private float orientation;
+    [SerializeField] private float initial_fov;
 
     [SerializeField] private Rigidbody _rb;
+    [SerializeField] private Light _light;
+    [SerializeField] private float light_speed;
+    [SerializeField] private bool _lighting_up;
+    [SerializeField] private float _light_per_second;
 
+    private void Start()
+    {
+        initial_fov = _light.spotAngle;
+    }
     public void onMove(InputAction.CallbackContext context)
     {
         _movement = context.ReadValue<Vector2>();
@@ -53,11 +61,18 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         RotatePlayer();
+        LightUpEnv();
     }
 
     public void onRotate(InputAction.CallbackContext context)
     {
         _rotate = context.ReadValue<Vector2>();
+    }
+
+    public void onLightUp(InputAction.CallbackContext context)
+    {
+        _lighting_up = context.performed;
+        if (!_lighting_up) _light.spotAngle = initial_fov;
     }
 
     private void RotatePlayer()
@@ -68,5 +83,10 @@ public class PlayerController : MonoBehaviour
 
         //hacky way to ensure update only happens once
         _rotate = Vector2.zero;
+    }
+    private void LightUpEnv()
+    {
+        if (!_lighting_up) return;
+        _light.spotAngle += _light_per_second * Time.deltaTime;
     }
 }
