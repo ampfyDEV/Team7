@@ -49,6 +49,7 @@ public class EnemyAI : MonoBehaviour, ISlayable
     }
     public float AttackDamage()
     {
+        //TODO: returns stats instead
         return 5;
     }
 
