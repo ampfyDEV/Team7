@@ -22,6 +22,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject sprite;
 
+    [SerializeField] private float lightRate;
+    [SerializeField] private float lightDmg;
+    [SerializeField] private float lightTimeDecay;
+    [SerializeField] private PlayerCombat playerCombat;
+
     private void Start()
     {
         initial_fov = _light.spotAngle;
@@ -120,8 +125,21 @@ public class PlayerController : MonoBehaviour
     }
     private void LightUpEnv()
     {
-        if (!_lighting_up) return;
-        _light.spotAngle += _light_per_second * Time.deltaTime;
-        _radius.radius += _radius_per_second * Time.deltaTime;
+        if (!_lighting_up)
+        {
+            lightRate = 0;
+        }
+        else
+        {
+            _light.spotAngle += _light_per_second * Time.deltaTime;
+            _radius.radius += _radius_per_second * Time.deltaTime;
+            lightRate += Time.deltaTime;
+            if (lightRate > lightTimeDecay)
+            {
+                playerCombat.TakeDamage(lightDmg);
+                lightRate = 0;
+            }
+        }
+
     }
 }
