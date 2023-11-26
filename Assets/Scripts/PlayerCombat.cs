@@ -9,6 +9,7 @@ public class PlayerCombat : MonoBehaviour, ISlayable
     [SerializeField] private HealthBarUI healthBarUI;
     [SerializeField] private float _healthDecay;
     [SerializeField] private float _decayRate = 1f;
+    [SerializeField] private GameManager gameManager;
 
     private void Awake()
     {
@@ -34,7 +35,13 @@ public class PlayerCombat : MonoBehaviour, ISlayable
 
     public void TakeDamage(float attack)
     {
-        health -= attack; healthBarUI.UpdatePlayerHealth(playerStats.GetMaxHP(), health);
+        health -= attack;
+        healthBarUI.UpdatePlayerHealth(playerStats.GetMaxHP(), health);
+        if (health <= 0)
+        {
+            //TODO: Player Death Animation
+            gameManager.GameOver();
+        }
     }
 
     public float AttackDamage() { return playerStats.GetAttack(); }

@@ -65,6 +65,10 @@ MonoBehaviour:
   _radius_per_second: 6
   _animator: {fileID: 3250943772522546266}
   sprite: {fileID: 5126774240943707639}
+  lightRate: 0
+  lightDmg: 1
+  lightTimeDecay: 0.5
+  playerCombat: {fileID: 3393806113024061478}
 --- !u!114 &3626118333911309505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,8 +213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0115e2d5c4ea3a44cb549e926b244afd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 0}
-  health: 0
+  playerStats: {fileID: 1104837852565636131}
+  health: 20
+  healthBarUI: {fileID: 0}
+  _healthDecay: 0
+  _decayRate: 1
+  gameManager: {fileID: 0}
 --- !u!114 &1104837852565636131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,9 +231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c7df0f4c7818348bdd639eb5bc3fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 20
   health: 0
-  attack: 0
+  attack: 5
 --- !u!1 &3509740824658503500
 GameObject:
   m_ObjectHideFlags: 0

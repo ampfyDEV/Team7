@@ -27,6 +27,7 @@ public class EnemyAI : MonoBehaviour, ISlayable
         {
             var player = other.GetComponent<ISlayable>();
             player.TakeDamage(AttackDamage());
+            enemyController.StopMoving();
         }
     }
 
@@ -46,11 +47,15 @@ public class EnemyAI : MonoBehaviour, ISlayable
     private void OnTriggerExit(Collider other)
     {
         enemyController.HideEnemy();
+        if (other.gameObject.tag == "Light")
+        {
+            enemyController.StopMoving();
+        }
     }
     public float AttackDamage()
     {
         //TODO: returns stats instead
-        return 5;
+        return 99;
     }
 
     public float GetHealth()
