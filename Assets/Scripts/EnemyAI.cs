@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,11 +38,12 @@ public class EnemyAI : MonoBehaviour, ISlayable
         if (other.gameObject.tag == "Light")
         {
             enemyController.RevealEnemy();
+            var player = other.gameObject.GetComponentInParent<ISlayable>();
+            if (player == null) return;
+            enemyController.StartMoving(player);
         }
 
-        var player = other.gameObject.GetComponentInParent<ISlayable>();
-        if (player == null) return;
-        enemyController.StartMoving(player);
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -65,11 +67,16 @@ public class EnemyAI : MonoBehaviour, ISlayable
 
     public void TakeDamage(float attack)
     {
-        throw new System.NotImplementedException();
+        Destroy(gameObject);
     }
 
     public Vector3 GetPosition()
     {
         throw new System.NotImplementedException();
+    }
+
+    public void RestoreHealth(float amount)
+    {
+        throw new NotImplementedException();
     }
 }
