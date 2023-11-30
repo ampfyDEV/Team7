@@ -1,29 +1,30 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour, ISlayable
+public class TrapAI : MonoBehaviour
 {
     [SerializeField] private EnemyController enemyController;
+    [SerializeField] private bool inRange = false;
+    [SerializeField] private float _attackBuffer;
+    [SerializeField] private float _attackspeed;
 
     private void Awake()
     {
         enemyController = GetComponent<EnemyController>();
         if (!enemyController) Debug.LogError("missing enemy controller ref in EnemyAI.cs");
     }
-
     private void OnTriggerEnter(Collider other)
     {
         EnemyRevealed(other);
 
 
-        //if hit player then deal damge
-        DamagePlayer(other);
+        if (other.gameObject.tag == "Player") inRange = true;
     }
 
     private void DamagePlayer(Collider other)
     {
+        if (!inRange) return;
         if (other.gameObject.tag == "Player")
         {
             var player = other.GetComponent<ISlayable>();
@@ -38,12 +39,7 @@ public class EnemyAI : MonoBehaviour, ISlayable
         if (other.gameObject.tag == "Light")
         {
             enemyController.RevealEnemy();
-            var player = other.gameObject.GetComponentInParent<ISlayable>();
-            if (player == null) return;
-            enemyController.StartMoving(player);
         }
-
-
     }
 
     private void OnTriggerExit(Collider other)
@@ -54,29 +50,22 @@ public class EnemyAI : MonoBehaviour, ISlayable
             enemyController.StopMoving();
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        _attackBuffer += Time.deltaTime;
+        Debug.Log(other.gameObject.name);
+        if (_attackBuffer > _attackspeed)
+        {
+            DamagePlayer(other);
+            _attackBuffer = 0;
+        }
+    }
+
     public float AttackDamage()
     {
         //TODO: returns stats instead
         return 99;
     }
 
-    public float GetHealth()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void TakeDamage(float attack)
-    {
-        Destroy(gameObject);
-    }
-
-    public Vector3 GetPosition()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void RestoreHealth(float amount)
-    {
-        throw new NotImplementedException();
-    }
 }
