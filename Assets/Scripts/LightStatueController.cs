@@ -9,10 +9,15 @@ public class LightStatueController : MonoBehaviour
     [SerializeField] private int AnimationTime = 2;
     [SerializeField] private int level;
     [SerializeField] private bool hasAlreadyCompleted = false;
+    [SerializeField] private SpriteRenderer sprite;
 
-
+    private void Start()
+    {
+        sprite.enabled = false;
+    }
     private void OnTriggerEnter(Collider other)
     {
+        RevealStatue(other);
         if (other.gameObject.tag == "Player" && hasAlreadyCompleted == false)
         {
             animator.SetTrigger("LevelComplete");
@@ -23,6 +28,22 @@ public class LightStatueController : MonoBehaviour
             hasAlreadyCompleted = true;
             StartCoroutine(WaitForAnimationToFinish());
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        sprite.enabled = false;
+    }
+
+    private void RevealStatue(Collider other)
+    {
+        //if light source then reveal themselves
+        if (other.gameObject.tag == "Light")
+        {
+            sprite.enabled = true;
+        }
+
+
     }
 
     private IEnumerator WaitForAnimationToFinish()

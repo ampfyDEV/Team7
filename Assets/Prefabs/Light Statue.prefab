@@ -156,7 +156,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -177,6 +177,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8004310262076478400}
+  AnimationTime: 2
+  level: 0
+  hasAlreadyCompleted: 0
+  sprite: {fileID: 2434790393138217794}
 --- !u!114 &315934174078197688
 MonoBehaviour:
   m_ObjectHideFlags: 0
