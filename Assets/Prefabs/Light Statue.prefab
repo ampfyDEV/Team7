@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 8572497107783747027}
   - component: {fileID: 478679414342093145}
   - component: {fileID: 315934174078197688}
+  - component: {fileID: 8589843668820550439}
   m_Layer: 0
   m_Name: Light Statue
   m_TagString: Untagged
@@ -193,3 +194,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2271701fc5dad945b6bbc51118f4fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8589843668820550439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6582599418809667584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -563619712
+      Data2: 1130033429
+      Data3: 1544559232
+      Data4: 773572485
+    Path: event:/Music/L1/Level 1 Drones
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

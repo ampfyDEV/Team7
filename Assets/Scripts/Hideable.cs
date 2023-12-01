@@ -8,7 +8,9 @@ public class Hideable : MonoBehaviour
 
     private void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         sprite.enabled = false;
+
     }
     private void OnTriggerEnter(Collider other)
     {
