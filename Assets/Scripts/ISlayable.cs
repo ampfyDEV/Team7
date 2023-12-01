@@ -8,5 +8,4 @@ public interface ISlayable
     public float AttackDamage();
     public float GetHealth();
     public Vector3 GetPosition();
-    public void RestoreHealth(float amount);
 }

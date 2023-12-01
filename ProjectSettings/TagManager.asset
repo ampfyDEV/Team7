@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Light
-  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -42,10 +41,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Enviroment
-    uniqueID: 3005797461
-    locked: 0
-  - name: Interactables
-    uniqueID: 912880165
     locked: 0

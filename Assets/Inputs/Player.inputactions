@@ -15,6 +15,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Mouse Position",
+                    "type": "Value",
+                    "id": "2f7724a1-3231-4c0e-8c62-e566aee4ce50",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Camera",
                     "type": "Value",
                     "id": "6e6426ba-fa20-43ab-bce8-193ba3e0442e",
@@ -27,15 +36,6 @@
                     "name": "Light",
                     "type": "Button",
                     "id": "7edadbc7-fa32-46b7-a193-b0372215ff5b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Attack",
-                    "type": "Button",
-                    "id": "82243681-32a7-476c-a6ce-5005c71fadae",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -99,6 +99,17 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "",
+                    "id": "a6cfb175-8455-4559-af5b-d56876078c37",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "QE",
                     "id": "902442cf-a4a3-4113-9713-cc488a9b6a02",
                     "path": "2DVector",
@@ -139,28 +150,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Light",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6962e2d6-7d5a-40b0-838d-e6731943286b",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "58938cb7-4965-49aa-8697-fbe1a577136e",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

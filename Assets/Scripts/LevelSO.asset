@@ -13,8 +13,4 @@ MonoBehaviour:
   m_Name: LevelSO
   m_EditorClassIdentifier: 
   respawn:
-  - {x: 0, y: -0.75, z: -2.45}
-  - {x: 0.78, y: -0.75, z: 16.94}
-  - {x: 24.05, y: -0.75, z: 29.21}
-  - {x: 42.52, y: -0.75, z: 54.52}
-  currentLevel: 0
+  - {x: 0, y: 0.055, z: -3.8}

@@ -16,17 +16,6 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private ISlayable target;
     [SerializeField] private bool isMoving;
     [SerializeField] private float _speed;
-    [SerializeField] private bool animationPlaying = false;
-    private void OnEnable()
-    {
-        GameManager.Instance.onLevelComplete += onLevelComplete_ememyLevelComplete;
-    }
-
-    private void OnDisable()
-    {
-        GameManager.Instance.onLevelComplete -= onLevelComplete_ememyLevelComplete;
-    }
-
 
     private void Start()
     {
@@ -37,7 +26,6 @@ public class EnemyController : MonoBehaviour
 
     private void Update()
     {
-        if (animationPlaying) return;
         Move();
     }
 
@@ -71,8 +59,4 @@ public class EnemyController : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetPos, _speed * Time.deltaTime);
     }
 
-    private void onLevelComplete_ememyLevelComplete(bool obj)
-    {
-        animationPlaying = obj;
-    }
 }
