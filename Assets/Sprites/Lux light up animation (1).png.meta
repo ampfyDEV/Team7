@@ -1,0 +1,681 @@
+fileFormatVersion: 2
+guid: 50cbdbab5898ba14f87c6423b219bc05
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lux light up animation (1)_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 26
+        height: 33
+      alignment: 9
+      pivot: {x: 0.49406248, y: 0.0041668075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bd2fe1234486d4ea46906c0616d7d3
+      internalID: -1957847160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49406287, y: -0.001680382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d1b31d9d858d345b006e084b55c0c1
+      internalID: 1640826097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.48812544, y: 0.0031434658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de713e8be902f8b478b1092341d77b61
+      internalID: -702183640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49406317, y: -0.001680382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62680b244fdb66b45b83950228afd7f5
+      internalID: -1437816391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.50593746, y: -0.001680382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0529c787415508e4abbe3fd6cf660943
+      internalID: 1568652490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 26
+        height: 33
+      alignment: 9
+      pivot: {x: 0.50593746, y: -0.000510863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c391383d5e5044e8e6ca379e5e5fe5
+      internalID: -376043548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_6
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.50593746, y: -0.0037111961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707d62dae50f2ca4ca3fc91684d558e3
+      internalID: 139814593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.00035099147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90dae7ee76ce0445965cf2939590efc
+      internalID: -1866015285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_8
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.49406317, y: 0.00035099147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e07ffba7c438c40a53d9dec5bf078b
+      internalID: 633359412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_9
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.50593686, y: 0.00035099147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816271d7ad87ee840b57c83f287c76fc
+      internalID: 1780012736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.505938, y: -0.0077733835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b69d190a104c3f4c8fc33ff3fcec477
+      internalID: 1963634560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_11
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.49406317, y: 0.00035099147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90675998b91e3c4d9e4f5c05fbf6e90
+      internalID: 829662086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_12
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.49406433, y: 0.0044131787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d8b9c68f918514081f92ac6c4d9fbe
+      internalID: -354698832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_13
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.505938, y: 0.00035099147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648814861905b75479b0b34c50adc5d9
+      internalID: 1441674673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_14
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.00035099147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b751f187bbe2748bd6139886f8327e
+      internalID: 613632519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_15
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5059392, y: 0.00035099147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a3e46a2a83486438712c857cdfcc3c
+      internalID: -193461238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_16
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.00035099147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470ece80300ede64f86d63246e861b08
+      internalID: 1607986882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_17
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.50593686, y: -0.0037111961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec91fff3a42c1be479e3688e390a7baa
+      internalID: 856449484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_18
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 0
+        width: 26
+        height: 38
+      alignment: 9
+      pivot: {x: 0.49406317, y: -0.0037111961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f247ac6e6544854383a9aeed5c315d5
+      internalID: 2140079501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_19
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5000023, y: -0.001680382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c382ac9e80647f47b8fc993ecbfabb4
+      internalID: -1843616844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_20
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4940655, y: -0.001680382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d9a3caea918e146864d51aa4d56737
+      internalID: -555150830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_21
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: -0.001680382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad403bf3f91378e4181db98f89c70917
+      internalID: -1753850224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_22
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5059392, y: 0.0031434658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bcdb780c125d043bc83177666d83d8
+      internalID: -899739195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lux light up animation (1)_23
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 0
+        width: 26
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5059392, y: 0.007967314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9308b2159eb7c924696dd956c7f71951
+      internalID: -1691636866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d07c124c71c8903478b6fb4734838de5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lux light up animation (1)_0: -1957847160
+      Lux light up animation (1)_1: 1640826097
+      Lux light up animation (1)_10: 1963634560
+      Lux light up animation (1)_11: 829662086
+      Lux light up animation (1)_12: -354698832
+      Lux light up animation (1)_13: 1441674673
+      Lux light up animation (1)_14: 613632519
+      Lux light up animation (1)_15: -193461238
+      Lux light up animation (1)_16: 1607986882
+      Lux light up animation (1)_17: 856449484
+      Lux light up animation (1)_18: 2140079501
+      Lux light up animation (1)_19: -1843616844
+      Lux light up animation (1)_2: -702183640
+      Lux light up animation (1)_20: -555150830
+      Lux light up animation (1)_21: -1753850224
+      Lux light up animation (1)_22: -899739195
+      Lux light up animation (1)_23: -1691636866
+      Lux light up animation (1)_3: -1437816391
+      Lux light up animation (1)_4: 1568652490
+      Lux light up animation (1)_5: -376043548
+      Lux light up animation (1)_6: 139814593
+      Lux light up animation (1)_7: -1866015285
+      Lux light up animation (1)_8: 633359412
+      Lux light up animation (1)_9: 1780012736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

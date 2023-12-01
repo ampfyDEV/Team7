@@ -58,10 +58,10 @@ public class PlayerController : MonoBehaviour
         if (_movement == Vector2.zero) return;
         else _animator.SetFloat("speed", 1);
 
-        Vector3 playerMove;
-        playerMove = GetPlayerMove();
 
         RotateSprite();
+        Vector3 playerMove;
+        playerMove = GetPlayerMove();
         _rb.MovePosition(transform.position + playerMove * _movement.magnitude * _speed * Time.deltaTime);
     }
 
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 GetPlayerMove()
     {
         Vector3 playerMove;
-        switch (Mathf.Abs(transform.localEulerAngles.y))
+        switch (Mathf.RoundToInt(Mathf.Abs(transform.localEulerAngles.y)))
         {
             //looking right
             case 90:
@@ -140,9 +140,6 @@ public class PlayerController : MonoBehaviour
             isAttacking = true;
             _attackCD = true;
 
-            sprite.transform.localPosition = new Vector3(0, 1, 0);
-
-
             _animator.SetBool("isAttacking", isAttacking);
             _animator.SetBool("attackCD", _attackCD);
             StartCoroutine(FinishAttacking());
@@ -157,7 +154,6 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.08f);
         isAttacking = false;
         _animator.SetBool("isAttacking", isAttacking);
-        sprite.transform.localPosition = Vector3.zero;
     }
 
     private IEnumerator AttackOnCD()
