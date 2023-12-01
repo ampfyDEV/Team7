@@ -7,9 +7,14 @@ public class LevelSO : ScriptableObject
 {
 
     [SerializeField] private Vector3[] respawn;
+    [SerializeField] private int currentLevel;
 
     public Vector3 GetRespawn(int level)
     {
         return respawn[level];
     }
+
+    public void SetCurrentLevel(int level) { currentLevel = level; }
+
+    public int GetCurrentLevel() { return currentLevel; }
 }

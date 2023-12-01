@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 91172afc3759dd74092d9382a6e41ab9
+guid: 2a75451b9832c4c4a87a817ee01be3de
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,190 +136,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lux walking animation_0
+      name: lux sword attack animation_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 0
-        width: 238
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0364e4aa1668df94d9048b48cc7a17c4
-      internalID: -1617629684
+      spriteID: c05e6804c581a4a4089322b9cd025782
+      internalID: 461926556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lux walking animation_1
+      name: lux sword attack animation_1
       rect:
         serializedVersion: 2
-        x: 305
+        x: 72
         y: 0
-        width: 236
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ae66a5f652bf6b4a889a30f7ae92fb5
-      internalID: -595526515
+      spriteID: e7f76ddb425e15b4ab0592f51c2bb196
+      internalID: -1578535263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lux walking animation_2
+      name: lux sword attack animation_2
       rect:
         serializedVersion: 2
-        x: 601
+        x: 132
         y: 0
-        width: 238
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ffa13cb196bf534ba986a3158641d02
-      internalID: -604181813
+      spriteID: 844f2ba2bd629744d939f4e3cfa97248
+      internalID: -1321585730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lux walking animation_3
+      name: lux sword attack animation_3
       rect:
         serializedVersion: 2
-        x: 899
+        x: 198
         y: 0
-        width: 237
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4917f71f3873b4447be1e5735e4a021b
-      internalID: -1003729767
+      spriteID: 98e1f78a0b1a22a4d8e3d08945cc5bfe
+      internalID: -1547844408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lux walking animation_4
+      name: lux sword attack animation_4
       rect:
         serializedVersion: 2
-        x: 1195
+        x: 266
         y: 0
-        width: 237
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2740411305c12984e9a29fd39e24ac54
-      internalID: -2097056971
+      spriteID: c86a83911400ecc4cac89be876fc1539
+      internalID: 2069736822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lux walking animation_5
+      name: lux sword attack animation_5
       rect:
         serializedVersion: 2
-        x: 1492
+        x: 330
         y: 0
-        width: 238
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd1ce8d2df4ea5143a60f4524d100093
-      internalID: -432164143
+      spriteID: 0212f0a43eb897c4a986bd4fa681e332
+      internalID: 480201139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lux walking animation_6
+      name: lux sword attack animation_6
       rect:
         serializedVersion: 2
-        x: 1789
+        x: 398
         y: 0
-        width: 237
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9796c7dd132724f4692eb388bcf16ce3
-      internalID: -220583135
+      spriteID: 4b73e3de968ef5a4eae4336497ad82e0
+      internalID: -1853577758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lux walking animation_7
+      name: lux sword attack animation_7
       rect:
         serializedVersion: 2
-        x: 2086
+        x: 468
         y: 0
-        width: 238
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 770bcb8a626d7a44abba62ceb9ce31a9
-      internalID: -860745396
+      spriteID: b3de4a3d14231b34fa30dbea75271efa
+      internalID: 493821730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lux walking animation_8
+      name: lux sword attack animation_8
       rect:
         serializedVersion: 2
-        x: 2384
+        x: 530
         y: 0
-        width: 236
-        height: 297
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e72856ab422a92e48a8a4724e007e503
-      internalID: -271334332
+      spriteID: 1a55c7dbdf5bfb34cafc493e2a84eb45
+      internalID: 1861946158
       vertices: []
       indices: 
       edges: []
@@ -327,7 +327,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6e3251453c0292e4f8bb0752df713307
+    spriteID: 7561041b14aefb245aee725c49f5f7b4
     internalID: 0
     vertices: []
     indices: 
@@ -335,15 +335,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lux walking animation_0: -1617629684
-      lux walking animation_1: -595526515
-      lux walking animation_2: -604181813
-      lux walking animation_3: -1003729767
-      lux walking animation_4: -2097056971
-      lux walking animation_5: -432164143
-      lux walking animation_6: -220583135
-      lux walking animation_7: -860745396
-      lux walking animation_8: -271334332
+      lux sword attack animation_0: 461926556
+      lux sword attack animation_1: -1578535263
+      lux sword attack animation_2: -1321585730
+      lux sword attack animation_3: -1547844408
+      lux sword attack animation_4: 2069736822
+      lux sword attack animation_5: 480201139
+      lux sword attack animation_6: -1853577758
+      lux sword attack animation_7: 493821730
+      lux sword attack animation_8: 1861946158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

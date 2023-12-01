@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class PlayerCombat : MonoBehaviour, ISlayable
     [SerializeField] private float _healthDecay;
     [SerializeField] private float _decayRate = 1f;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private AttackDetection attackDetection;
 
     private void Awake()
     {
@@ -46,7 +48,20 @@ public class PlayerCombat : MonoBehaviour, ISlayable
 
     public float AttackDamage() { return playerStats.GetAttack(); }
 
-    public float GetHealth() { return health; }
+    public float GetHealth() { return playerStats.GetMaxHP(); }
 
     public Vector3 GetPosition() { return gameObject.transform.position; }
+
+    public void AttackEnemy()
+    {
+        var target = attackDetection.getTarget();
+        if (target == null) return;
+        target.TakeDamage(99);
+        attackDetection.EnemyDestroyed();
+    }
+
+    public void RestoreHealth(float amount)
+    {
+        health = amount;
+    }
 }
