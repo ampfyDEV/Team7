@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4267756906961675972}
   - component: {fileID: 3393806113024061478}
   - component: {fileID: 1104837852565636131}
+  - component: {fileID: 4235055800095190303}
+  - component: {fileID: 6411417760028225840}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -291,6 +293,38 @@ MonoBehaviour:
   maxHealth: 20
   health: 0
   attack: 5
+--- !u!114 &4235055800095190303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097712358435429882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Enemy
+  Parameter: Enemys in sight
+  TriggerEvent: 3
+  Value: 2
+--- !u!114 &6411417760028225840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097712358435429882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Enemy
+  Parameter: Enemys in sight
+  TriggerEvent: 4
+  Value: 1
 --- !u!1 &3091570931055697835
 GameObject:
   m_ObjectHideFlags: 0
